@@ -16,9 +16,18 @@ h2.header {
     font-style: italic;
     color: #ab966f;
 }
+h3.header {
+    border-bottom: 1px solid #ab966f;
+    font-size: 24px;
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #ab966f;
+}
 
 p {
     font-size: 16px;
+    line-height: 20px;
 }
 
 .contentbox {
@@ -40,6 +49,28 @@ p {
     margin: 10px;
     
 }
+
+
+.bg {
+    max-height: 100%;
+    max-width: 1920px;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+
+.mapbox {
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+
 
 /*Navigation Bar Styling*/
 ul.navbar {
@@ -69,15 +100,6 @@ ul.navbar li.navbar a:hover.navbar {
 }
 /*End of Navigation Bar Styling*/
 
-.bg {
-    min-height: 100%;
-    min-width: 1920px;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
 
 /* Aside Stylings, meant for images/videos to display on the right hand side of the screen*/
 .aside {
@@ -97,3 +119,27 @@ ul.navbar li.navbar a:hover.navbar {
     padding: 5px;
     align-self: center;
 }
+
+/*Map Styling*/
+.map-container {
+    position: relative;
+    max-width: 1194px;
+    max-height: 1249px;
+    
+}
+
+.map {
+    max-width: 1194px;
+    max-height: 1249px;
+    padding: 5px;
+    margin-left: 75px;
+    display: block;
+}
+
+.icon {
+    position: absolute;
+    z-index: 10;
+    width: 100px;
+}
+
+
