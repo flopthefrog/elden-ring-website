@@ -17,7 +17,7 @@ h2.header {
     font-family: "Spectral", serif;
     font-weight: 400;
     font-style: italic;
-    color: #ab966f;
+    color: lightgray;
 }
 h3.header {
     border-bottom: 1px solid #ab966f;
@@ -28,10 +28,19 @@ h3.header {
     color: #ab966f;
 }
 
-p {
+p, li {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.75;
+    color: rgb(228, 222, 222);
     
+}
+
+a {
+    color: #ab966f;
+}
+
+a:hover {
+    color: #c8b796;
 }
 
 .contentbox {
@@ -46,7 +55,7 @@ p {
 
 
 .textbox {
-    color: lightgrey;
+    
     max-width: 90%;
     padding: 10px;
     margin: 10px;
@@ -70,6 +79,7 @@ ul.navbar {
     padding: 0px;
     overflow: hidden;
     background-color: #333333;
+    
 }
 
 ul.navbar li.navbar {
@@ -82,12 +92,15 @@ ul.navbar li.navbar a.navbar {
     color: white;
     text-align: center;
     padding: 14px 16px;
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: italic;
     text-decoration: none;
 
 }
 
 ul.navbar li.navbar a:hover.navbar {
-    background-color: black;
+    background-color: rgb(27, 26, 26);
 }
 /*End of Navigation Bar Styling*/
 
@@ -160,6 +173,12 @@ img.sidebar {
     
 }
 
+iframe.sidebar {
+    display: block;
+    border: solid 2px #ab966f;
+    margin-top: 30px;
+}
+
 .header-sidebar {
     border-bottom: 2px solid #ab966f;
     font-size: 34px;
@@ -167,4 +186,28 @@ img.sidebar {
     font-weight: 400;
     font-style: italic;
     color: lightgray;
+}
+
+table.sidebar {
+    width: 100%;
+}
+
+button {
+    width: 200px;
+    height: 100px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.button-header {
+    font-size: 32px;
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #ab966f;
+    position: relative;
+    top: 25px;
+    left: 12px;
 }
