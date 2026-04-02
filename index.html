@@ -12,9 +12,29 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
+        <script type="text/javascript">
+
+            function switchmap() {
+                
+
+                const map = document.getElementById("map");
+                const src = map.src || "";
+                const overworldIcons = 
+                [""]
+
+                if (src.includes("main-map.png")) {
+                    map.src = "images/map/underground-map.png";
+                }
+                else {
+                    map.src = "images/map/main-map.png";
+                }
+            }
+
+
+        </script>
 
     </head>
-    <body>
+    <body onload="test()">
         <!--Background-->
         <img class="bg" src="images/backgrounds/scadutree-background.webp">
         
@@ -63,41 +83,52 @@
                 <h2 class="header">Interactive Map- Click on any marked location!</h2>           
             </div>
             <div class="map-container">
-                <img class="map"
+                <img class="map" id="map"
                 src="images/map/main-map.png">
                 
+                <!--Map Icons-->
+                
                 <a href="godrick.html">
-                    <img class="icon" style="left: 340px; top: 860px;"
+                    <img class="icon" id="icon-stormveil" style="left: 340px; top: 860px;"
                     src="images/map/icon-stormveil.webp">
                 </a>
                 <a href="rennala.html">
-                    <img class="icon" style="left: 170px; top: 610px;"
+                    <img class="icon" id="icon-raya-lucaria" style="left: 170px; top: 610px;"
                     src="images/map/icon-raya-lucaria.webp">
                 </a>
                 <a href="radahn.html">
-                    <img class="icon" style="left: 750px; top: 970px;"
+                    <img class="icon" id="icon-redmane-castle" style="left: 750px; top: 970px; width: 110px;"
                     src="images/map/icon-redmane-castle.webp">
                 </a>
                 <a href="fire-giant.html">
-                    <img class="icon" style="left:840px; top: 360px;"
+                    <img class="icon" id="icon-giants-forge" style="left:840px; top: 360px;"
                     src="images/map/icon-giants-forge.webp">
                 </a>
                 <a href="rykard.html">
-                    <img class="icon" style="left: 210px; top: 360px;"
+                    <img class="icon" id="icon-volcano-manor" style="left: 220px; top: 350px;"
                     src="images/map/icon-volcano-manor.webp">
                 </a>
                 <a href="placidusax.html">
-                    <img class="icon" style="left: 1110px; top: 550px;"
+                    <img class="icon" id="icon-farum-azula" style="left: 1110px; top: 550px;"
                     src="images/map/icon-farum-azula.webp">
                 </a>
                 <a href="index.html">
-                    <img class="icon" style="left: 500px; top: 430px;"
+                    <img class="icon" id="icon-lyendell" style="left: 490px; top: 420px; width: 120px;"
                     src="images/map/icon-lyendell.webp">
                 </a>
                 <a href="index.html">
-                    <img class="icon" style="left: 690px; top: 40px;"
+                    <img class="icon" id="icon-haligree" style="left: 700px; top: 50px; width: 90px;"
                     src="images/map/icon-haligree.webp">
                 </a>
+                <a href="index.html">
+                    <img class="icon" id="icon-manus-celes" style="left: 160px; top: 760px;"
+                    src="images/map/icon-manus-celes.webp">
+                </a>
+                
+                <div class="textbox" style="position: absolute; left: 70px; top: -100px;">
+                    <h2 class="button-header" style="left: -35px;">Venture Underground</h2>
+                    <button class="button" onclick="switchmap()"><img src="images/map/icon-river-well.webp"></button> 
+                </div>
             </div>
     </body>
 </html>

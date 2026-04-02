@@ -134,6 +134,14 @@ ul.navbar li.navbar a:hover.navbar {
 }
 
 .map {
+
+    max-width: 1194px;
+    max-height: 1249px;
+    padding: 5px;
+    margin-left: 75px;
+    display: block;
+}
+.underground-map {
     max-width: 1194px;
     max-height: 1249px;
     padding: 5px;
